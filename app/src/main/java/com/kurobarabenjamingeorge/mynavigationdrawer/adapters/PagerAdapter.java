@@ -1,8 +1,12 @@
-package com.kurobarabenjamingeorge.mynavigationdrawer;
+package com.kurobarabenjamingeorge.mynavigationdrawer.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.kurobarabenjamingeorge.mynavigationdrawer.fragments.TabOneFragment;
+import com.kurobarabenjamingeorge.mynavigationdrawer.fragments.TabThreeFragment;
+import com.kurobarabenjamingeorge.mynavigationdrawer.fragments.TabTwoFragment;
 
 /**
  * Created by George Benjamin on 8/2/2018.

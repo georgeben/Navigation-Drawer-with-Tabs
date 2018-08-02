@@ -5,4 +5,16 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_one">Hey I\'m tab one</string>
+    <string name="tab_three">Hey I\'m tab three</string>
+    <string name="tab_two">Hey I\'m tab two</string>
+    <string name="movies">Movies</string>
+    <string name="top_grossing">Top Grossing</string>
+    <string name="new_movies">New</string>
+    <string name="popular">Popular</string>
+    <string name="movies_toast">Movies</string>
+    <string name="books">Books</string>
+    <string name="music">Music</string>
+    <string name="favourites">Favourites</string>
+    <string name="welcome_message">Welcome to Nameless App</string>
 </resources>

@@ -14,6 +14,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.kurobarabenjamingeorge.mynavigationdrawer.Utils.Utils;
+import com.kurobarabenjamingeorge.mynavigationdrawer.adapters.PagerAdapter;
+
 public class MainActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener{
 
@@ -25,8 +28,11 @@ public class MainActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Set the toolbar as the app bar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar) ;
         setSupportActionBar(toolbar);
+
+        //Display the menu toggle icon on the app bar
         ActionBar actionBar = getSupportActionBar();
         if(actionBar!=null){
             actionBar.setDisplayHomeAsUpEnabled(true);
@@ -35,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements
 
         mDrawerLayout =  (DrawerLayout) findViewById(R.id.drawer_layout);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+
+        //Registers the NavigationItemSelectedListener to the navigation view
         navigationView.setNavigationItemSelectedListener(this);
 
         ActionBarDrawerToggle toggler = new ActionBarDrawerToggle(this, mDrawerLayout,
@@ -42,10 +50,11 @@ public class MainActivity extends AppCompatActivity implements
         mDrawerLayout.addDrawerListener(toggler);
         toggler.syncState();
 
+        //Creates the tab layout from the layout and populates it with three tabs
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tab One"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab Two"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab Three"));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.top_grossing));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.new_movies));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.popular));
 
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
@@ -90,13 +99,23 @@ public class MainActivity extends AppCompatActivity implements
         mDrawerLayout.closeDrawers();
 
         switch(item.getItemId()){
-            case R.id.market:
-                Toast.makeText(this, "Market", Toast.LENGTH_SHORT).show();
+            case R.id.movies:
+                Utils.makeToast(getString(R.string.movies_toast), MainActivity.this);
                 return true;
-            case R.id.school:
-                Toast.makeText(this, "School", Toast.LENGTH_SHORT).show();
+            case R.id.books:
+                Utils.makeToast(getString(R.string.books), MainActivity.this);
+                return true;
+
+            case R.id.music:
+                Utils.makeToast(getString(R.string.music), MainActivity.this);
+                return true;
+
+            case R.id.favourites:
+                Utils.makeToast(getString(R.string.favourites), MainActivity.this);
                 return true;
         }
         return true;
     }
+
+
 }

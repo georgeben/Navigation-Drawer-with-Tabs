@@ -1,4 +1,4 @@
-package com.kurobarabenjamingeorge.mynavigationdrawer;
+package com.kurobarabenjamingeorge.mynavigationdrawer.fragments;
 
 
 import android.os.Bundle;
@@ -7,13 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.kurobarabenjamingeorge.mynavigationdrawer.R;
+
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TabTwoFragment extends Fragment {
+public class TabThreeFragment extends Fragment {
 
 
-    public TabTwoFragment() {
+    public TabThreeFragment() {
         // Required empty public constructor
     }
 
@@ -21,7 +23,7 @@ public class TabTwoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.tab_fragment_two, container, false);
+        return inflater.inflate(R.layout.tab_fragment_three, container, false);
     }
 
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_text_size">21sp</dimen>
+    <dimen name="header_text_margin_top">100dp</dimen>
+    <dimen name="nav_header_height">196dp</dimen>
+    <dimen name="nav_header_padding">16dp</dimen>
+    <dimen name="nav_header_icon_width">70dp</dimen>
+    <dimen name="nav_header_icon_height">70dp</dimen>
+</resources>

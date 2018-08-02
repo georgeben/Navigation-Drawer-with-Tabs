@@ -7,7 +7,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello world"
+        android:text="@string/fragment_one"
+        android:layout_gravity="center"
+        android:textSize="@dimen/header_text_size"
+        android:layout_marginTop="@dimen/header_text_margin_top"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homer"
         android:layout_gravity="center"/>
 
 </LinearLayout>

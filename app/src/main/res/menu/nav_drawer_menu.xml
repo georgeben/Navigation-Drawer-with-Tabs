@@ -2,20 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item android:title="Market"
-            android:icon="@android:drawable/sym_def_app_icon"
-            android:id="@+id/market"/>
+        <item android:title="@string/movies"
+            android:icon="@drawable/ic_live_tv_black_24dp"
+            android:id="@+id/movies"/>
 
-        <item android:title="Church"
-            android:icon="@android:drawable/sym_def_app_icon"
-            android:id="@+id/church"/>
+        <item android:title="@string/books"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:id="@+id/books"/>
 
-        <item android:title="School"
-            android:icon="@android:drawable/sym_def_app_icon"
-            android:id="@+id/school"/>
+        <item android:title="@string/music"
+            android:icon="@drawable/ic_queue_music_black_24dp"
+            android:id="@+id/music"/>
 
-        <item android:title="Work"
-            android:icon="@android:drawable/sym_def_app_icon"
-            android:id="@+id/work"/>
+        <item android:title="@string/favourites"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:id="@+id/favourites"/>
     </group>
 </menu>
